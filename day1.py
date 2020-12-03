@@ -6,7 +6,7 @@ def get_data():
     return int_list
 
 
-def day1(items):
+def part_1(items):
     for i in range(len(items)):
         sum2020 = 2020 - items[i]
         for j in range(i + 1, len(items)):
@@ -14,7 +14,7 @@ def day1(items):
                 print items[i] * items[j]
 
 
-def day2(items):
+def part_2(items):
     for i in range(len(items)):
         for j in range(i, len(items)):
             for k in range(j, len(items)):
@@ -23,5 +23,5 @@ def day2(items):
 
 
 if __name__ == '__main__':
-    day1(get_data())
-    day2(get_data())
+    part_1(get_data())
+    part_2(get_data())
